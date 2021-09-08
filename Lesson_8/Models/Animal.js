@@ -7,4 +7,8 @@ export default class Animal {
   makeVoice() {
     console.log(`${this.constructor.name} says something...`);
   }
+
+  someFunc(){
+    
+  }
 }

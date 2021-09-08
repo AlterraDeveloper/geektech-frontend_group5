@@ -81,6 +81,5 @@ console.log(fruits.last());
 console.log(fruits[fruits.length - 1]);
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log(numbers.takeWhile((number) => number ** 2 < 50)); //[1,2,3,4]
-console.log(numbers.takeFromStart(3)); //[1,2,3]
-console.log(numbers.takeFromEnd(3)); //[7,8,9]
+// console.log(numbers.takeFromStart(3)); //[1,2,3]
+// console.log(numbers.takeFromEnd(3)); //[7,8,9]
