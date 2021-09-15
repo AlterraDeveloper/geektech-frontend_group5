@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 11</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="todolist" id="todolist">
+      <div class="todolist-inputs">
+        <input
+          type="text"
+          placeholder="Type your text here..."
+          id="todolist-input-text"
+        />
+        <input type="button" value="Save task" id="todolist-input-button" />
+        <select name="todolist-input-filter" id="todolist-input-filter">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+      <div class="todolist-tasks" id="todos"></div>
+    </div>
+
+    <script src="dist/project.js"></script>
+  </body>
+</html>
