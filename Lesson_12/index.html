@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 12</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      .lds-dual-ring {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+      }
+      .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #f00;
+        border-color: #f00 transparent #f00 transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form id="healthForm">
+      <legend>
+        Temperature
+        <input type="number" id="healthTemp" />
+      </legend>
+      <legend>
+        Breath frequency
+        <input type="number" id="healthBreathFreq" />
+      </legend>
+      <legend>
+        Skin color
+        <input type="text" id="healthSkinColor" />
+      </legend>
+      <input type="submit" value="Save" />
+      <input type="button" value="Refresh" id="refreshBtn" />
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>Data created</td>
+          <td>Temperature</td>
+          <td>Breath frequency</td>
+          <td>Skin color</td>
+        </tr>
+      </thead>
+      <tbody id="healthTable"></tbody>
+    </table>
+
+    <script src="app.js"></script>
+  </body>
+</html>
